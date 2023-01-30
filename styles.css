@@ -81,8 +81,16 @@
     padding-left: 1vw;
 }
 
-a:link{
+a.blue:link,
+a.blue:visited{
     color: #5f99ff;
+    text-decoration: none;
+}
+
+a.white:link,
+a.white:visited{
+    color: #fff;
+    text-decoration: none;
 }
 
 /* Device specific */
