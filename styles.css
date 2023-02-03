@@ -99,6 +99,7 @@ a.white:visited{
     text-decoration: none;
 }
 
+.feature-type2,
 .feature-type1 {
     width:90%;
     display: flex;
@@ -127,8 +128,16 @@ a.white:visited{
     color: #fff;
 }
 
-/* Device specific 961 */
-@media only screen and (min-width: 401px) {
+.ul-1{
+    margin: 2vh;
+}
+
+.li-1{
+    line-height: 4vh;
+}
+
+/* Device specific >961 */
+@media only screen and (min-width: 961px) {
   .page {
       font-size: 1.2vw;
   }
@@ -137,8 +146,43 @@ a.white:visited{
   }
   .main-container {
     height: 86vh;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content:center;
   }
+
   .footer-container {
     height: 7vh;
   }
+
+  .feature-type1 {
+      width:30%;
+      height:45%;
+      /*border: 1px solid yellow;*/
+      align-content:center;
+      justify-content: center;
+  }
+
+  .feature-type2 {
+    width: 100%;
+  }
+
+  .img-long{
+      max-height:90%;
+  }
+
+  .img-wide {
+      max-height: 100%;
+  }
+  .figcaption-type1 {
+      font-size: 1vw;
+  }
 }
+
+/* Device specific >401-960 */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+      .page {
+          font-size: 3vw;
+      }
+}
+
