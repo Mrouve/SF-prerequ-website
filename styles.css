@@ -11,6 +11,9 @@
   flex-wrap:wrap;
   font-family: sans-serif;
   font-size:4vw;
+  background-color: #000000;
+  min-height: 100vh;
+  justify-content: space-between;
 }
 
 .header-container {
@@ -24,11 +27,12 @@
   flex-direction: row;
   gap: 10vw;
   font-size: 100%;
+  align-items: flex-start;
 }
 
 .main-container {
   width:100%;
-  height: 86vh;
+  /*height: 86vh;*/
   color: #7b7b7b;
   background-color: #000000;  /* Blue */
   padding: 20px 0;
@@ -37,11 +41,12 @@
   justify-content: center;
   font-size: 110%;
   align-items:center;
+  overflow:hidden;
 }
 
 .footer-container {
   width:100%;
-  height: 7vh;
+  /*height: 7vh;*/
   color: #fff;
   background-color: #000000;
   padding: 20px 0;
@@ -49,6 +54,7 @@
   justify-content: center;
   font-size: 100%;
   gap: 3vw;
+  align-items: flex-end;
 }
 
 /* Components */
@@ -98,11 +104,41 @@ a.white:visited{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    margin: 1vh 1vh 2vh 1vh;
 }
 
-/* Device specific */
-@media only screen and (min-width: 961px) {
+.h2-1 {
+    color: #5f99ff;
+    margin-top: 1vh;
+}
+
+.img-long{
+    max-width:40%;
+}
+
+.img-wide {
+    max-width: 90%;
+}
+
+.figcaption-type1 {
+    font-size: 2.5vw;
+    font-style: italic;
+    color: #fff;
+}
+
+/* Device specific 961 */
+@media only screen and (min-width: 401px) {
   .page {
       font-size: 1.2vw;
+  }
+  .header-container {
+    height: 7vh;
+  }
+  .main-container {
+    height: 86vh;
+  }
+  .footer-container {
+    height: 7vh;
   }
 }
